@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Salon</title>
+    <title>Stylists - Hair Salon</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -32,29 +31,52 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick="showLocation()">Location</a>
                 </li>
-                <li class="nav-item">
-                    <img src="images/user.png" alt="User" class="user-icon rounded-circle" width="50" height="50">
-                </li>
             </ul>
         </div>
     </nav>
 
     <!-- 主内容 -->
-    <header class="hero-image" style="background-image: url('images/salon-background.jpg');">
-        <div class="hero-text">
-            <h1 class="display-4">Welcome to Hair Salon</h1>
-            <p class="lead">Your beauty, our duty. Book your appointment now!</p>
-            <button class="btn btn-primary btn-lg" onclick="window.location.href='booking.html'">Book Now</button>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Meet Our Stylists</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/stylist1.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 1" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">Expert in modern hairstyles and men's grooming.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/stylist2.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 2" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Specializes in women's haircuts and color treatments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/stylist3.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 3" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mary Johnson</h5>
+                        <p class="card-text">Experienced in hair extensions and curly hair styling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/stylist4.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 4" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Brown</h5>
+                        <p class="card-text">Master barber with over 15 years of experience.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <!-- 关于我们 -->
-    <section class="about mt-5 text-center">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We provide a range of hair styling services, from classic cuts to modern styles. Our experienced stylists are dedicated to making you look and feel your best.</p>
-        </div>
-    </section>
+    </div>
 
     <!-- 底部 -->
     <footer class="bg-dark text-white text-center py-4">
@@ -88,4 +110,3 @@
     </script>
 </body>
 </html>
-

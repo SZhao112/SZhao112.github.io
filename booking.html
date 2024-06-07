@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Hair Salon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" width="50" height="50">
+        </a>
+        <a class="navbar-brand" href="index.html">Hair Salon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stylists.html">Our Stylists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="booking.html">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showLocation()">Location</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <div class="container mt-5">
+        <h2 class="text-center">Book an Appointment</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="service-select">Choose your service:</label>
+                        <select class="form-control" id="service-select">
+                            <option>Haircut - $30</option>
+                            <option>Haircut & Wash - $45</option>
+                            <option>Full Service - $60</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="stylist-select">Choose your stylist:</label>
+                        <select class="form-control" id="stylist-select">
+                            <option>John Doe</option>
+                            <option>Jane Smith</option>
+                            <option>Mary Johnson</option>
+                            <option>Michael Brown</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-picker">Date:</label>
+                        <input type="date" class="form-control" id="date-picker">
+                    </div>
+                    <div class="form-group">
+                        <label for="time-select">Time:</label>
+                        <select class="form-control" id="time-select">
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>1:00 PM</option>
+                            <option>2:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name-input">Your name:</label>
+                        <input type="text" class="form-control" id="name-input" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-input">Your phone number:</label>
+                        <input type="tel" class="form-control" id="phone-input" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email-input">Your email address:</label>
+                        <input type="email" class="form-control" id="email-input" placeholder="Enter your email address">
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg btn-block" onclick="confirmAppointment()">Make an Appointment</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Address Info</h5>
+                    <p>123 Hair St., Beauty City</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@hairsalon.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Working Time</h5>
+                    <p>Mon-Fri: 9am - 7pm</p>
+                    <p>Sat: 10am - 5pm</p>
+                    <p>Sun: Closed</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>More Info</h5>
+                    <p><a href="#" class="text-white">Gift Card</a></p>
+                    <p><a href="#" class="text-white">Social Media Links</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function confirmAppointment() {
+            window.location.href = 'confirm.html';
+        }
+
+        function showLocation() {
+            alert("123 Hair St., Beauty City, Phone: (123) 456-7890");
+        }
+    </script>
+</body>
+</html>

@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Salon</title>
+    <title>Services - Hair Salon</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <!-- 导航栏 -->
@@ -40,21 +39,41 @@
     </nav>
 
     <!-- 主内容 -->
-    <header class="hero-image" style="background-image: url('images/salon-background.jpg');">
-        <div class="hero-text">
-            <h1 class="display-4">Welcome to Hair Salon</h1>
-            <p class="lead">Your beauty, our duty. Book your appointment now!</p>
-            <button class="btn btn-primary btn-lg" onclick="window.location.href='booking.html'">Book Now</button>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/service1.jpg" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Haircut</h5>
+                        <p class="card-text">Basic haircut for men and women. Price: $30.</p>
+                        <button class="btn btn-primary" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/service2.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Haircut & Wash</h5>
+                        <p class="card-text">Includes a haircut and hair wash. Price: $45.</p>
+                        <button class="btn btn-primary" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="images/service3.jpg" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Service</h5>
+                        <p class="card-text">Complete hair treatment including haircut, wash, and styling. Price: $60.</p>
+                        <button class="btn btn-primary" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <!-- 关于我们 -->
-    <section class="about mt-5 text-center">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We provide a range of hair styling services, from classic cuts to modern styles. Our experienced stylists are dedicated to making you look and feel your best.</p>
-        </div>
-    </section>
+    </div>
 
     <!-- 底部 -->
     <footer class="bg-dark text-white text-center py-4">
