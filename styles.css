@@ -1,49 +1,166 @@
-body {
-    font-family: Arial, sans-serif;
+/* 基本设置 */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden; /* 确保没有滚动条 */
+}
+
+body {
+    font-family: 'Georgia', serif;
     background-color: #f8f9fa;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .navbar {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand img {
-    border-radius: 50%;
+.navbar-brand {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.5rem;
 }
 
+.navbar-nav .nav-link {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    color: #f0e68c !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdead !important;
+}
+
+/* 背景图片样式 */
 .hero-image {
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
-    text-align: center;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.hero-text {
+.hero-text, .content-wrapper {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -20%;
 }
 
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #FFD700; /* 替换为金色 */
+}
+
+.hero-text button {
+    background-color: #ff8c00;
+    border: none;
+}
+
+.hero-text button:hover {
+    background-color: #ff6600;
+}
+
+.content-wrapper {
+    max-width: 90%; /* 更大容器以包含所有服务卡片 */
+    text-align: center;
+}
+
+/* 修改服务卡片样式 */
 .service-card {
-    transition: transform 0.2s;
+    background-color: #4B0082; /* 深紫色 */
+    color: #FFD700; /* 金色文字 */
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 350px; /* 设定统一的最小高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.service-card:hover {
-    transform: scale(1.05);
+.service-card .card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #FFD700; /* 使用金色边框 */
+}
+
+.service-card .card-body {
+    padding: 20px;
+    flex: 1; /* 使其填充卡片内容区域 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFD700; /* 金色文字 */
+}
+
+.service-card .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #FFD700; /* 金色文字 */
+}
+
+.service-card .btn {
+    background-color: #FFD700; /* 使用金色按钮 */
+    border: none;
+    color: #4B0082; /* 按钮上的文字为深紫色 */
+}
+
+.service-card .btn:hover {
+    background-color: #DAA520; /* 按钮悬停时为更深的金色 */
+}
+
+/* 修改服务标题样式 */
+.services-title {
+    font-family: 'Brush Script MT', cursive; /* 更华美的字体 */
+    color: #FFD700; /* 高级的金色 */
+    font-size: 3rem;
 }
 
 footer {
     background-color: #343a40;
     color: #fff;
-    margin-top: 20px;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 5px 0;
 }
 
 footer a {
@@ -55,13 +172,37 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.about {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .user-icon {
     border-radius: 50%;
 }
+
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service-card .btn-primary {
+    background-color: #ffa500;
+    border: none;
+}
+
+.service-card .btn-primary:hover {
+    background-color: #ff8c00;
+}
+
+.welcome-text {
+    color: #FFD700 !important; /* 修改 Welcome 部分文字颜色为金色 */
+}
+
