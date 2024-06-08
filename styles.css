@@ -276,3 +276,181 @@ img {
     background-color: #ff6600; /* 悬停时颜色 */
 }
 
+/* 修改 booking.html 中的表单标签和输入框的样式 */
+.booking-form label {
+    color: #FFD700; /* 金色标签 */
+    font-weight: bold;
+}
+
+.booking-form input, 
+.booking-form select, 
+.booking-form button {
+    border: 1px solid #FFD700; /* 金色边框 */
+    background-color: #ffffff; /* 白色背景 */
+    color: #000; /* 黑色文字 */
+}
+
+.booking-form input::placeholder,
+.booking-form select {
+    color: #000000; /* 金色占位符 */
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: #FFD700; /* 聚焦时的金色边框 */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* 金色阴影 */
+}
+
+/* 修改 "Book an Appointment" 标题的样式 */
+.booking-title {
+    font-family: 'Brush Script MT', cursive; /* 华美字体 */
+    color: #FFD700; /* 金色 */
+    font-size: 3rem;
+    margin-bottom: 40px; /* 增加底部间距 */
+}
+
+/* 修改 "Make an Appointment" 按钮的样式 */
+.booking-form .btn-primary {
+    background-color: #ff8c00; /* 使用橙色 */
+    color: #FFD700; /* 文字颜色为金色 */
+    border: none;
+    font-size: 16px; /* 调整字体大小 */
+    padding: 10px 20px; /* 调整按钮内边距 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    cursor: pointer; /* 鼠标悬停时显示为手形 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.booking-form .btn-primary:hover {
+    background-color: #ff6600; /* 悬停时颜色 */
+}
+
+/* 修改 "Make an Appointment" 按钮的位置 */
+.booking-form .btn-primary {
+    margin-top: 25px; /* 添加适当的顶部间距 */
+    background-color: #ff8c00;
+    color: #ffffff; /* 金色文字 */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.booking-form .btn-primary:hover {
+    background-color: #ff6600; /* 悬停时的颜色 */
+}
+
+/* 调整右侧列的对齐方式和高度 */
+.booking-form .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* 使内容在容器底部对齐 */
+    height: 100%; /* 使右侧列占满高度 */
+}
+
+/* 确保左右两列对齐 */
+.booking-form .row {
+    display: flex;
+    align-items: flex-start; /* 左对齐 */
+}
+
+/* 修改确认页面的样式 */
+.hero-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.booking-confirmation {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.confirm-title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    color: #FFD700; /* 高级的金色 */
+}
+
+.btn-primary {
+    background-color: #ff8c00;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff6600;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: rgb(229, 255, 0);
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* 定义金色文本样式 */
+.gold-text {
+    color: #FFD700; /* 设置文本为金色 */
+}
+
+/* 调整按钮样式 */
+.btn {
+    background-color: #ff8c00; /* 使用橙色按钮背景 */
+    border: none; /* 移除边框 */
+    color: #ffffff; /* 按钮文字颜色为金色 */
+    font-size: 16px; /* 调整字体大小 */
+    padding: 10px 20px; /* 调整按钮内边距 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    cursor: pointer; /* 鼠标悬停时显示为手形 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    margin: 0 10px; /* 增加按钮间距 */
+}
+
+.btn:hover {
+    background-color: #ff6600; /* 悬停时按钮颜色加深 */
+}
+
+/* 调整按钮样式 - 删除预定按钮 */
+.btn-danger {
+    background-color: #dc3545; /* 使用红色背景 */
+    border: none; /* 移除边框 */
+    color: #ffffff; /* 按钮文字颜色为金色 */
+    margin: 0 10px; /* 增加按钮间距 */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* 悬停时按钮颜色加深 */
+}
+
+

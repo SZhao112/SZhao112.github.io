@@ -39,62 +39,66 @@
         </div>
     </nav>
 
-
     <!-- 主内容 -->
-    <div class="container mt-5">
-        <h2 class="text-center">Book an Appointment</h2>
-        <form>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="service-select">Choose your service:</label>
-                        <select class="form-control" id="service-select">
-                            <option>Haircut - $30</option>
-                            <option>Haircut & Wash - $45</option>
-                            <option>Full Service - $60</option>
-                        </select>
+    <div class="hero-image" style="background-image: url('images/booking-background.jpg');">
+        <div class="content-wrapper booking-form">
+            <h2 class="text-center mb-4 booking-title">Book an Appointment</h2>
+            <form onsubmit="return submitForm()">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="service-select">Choose your service:</label>
+                            <select class="form-control" id="service-select">
+                                <option value="Haircut - $30">Haircut - $30</option>
+                                <option value="Haircut & Wash - $45">Haircut & Wash - $45</option>
+                                <option value="Full Service - $60">Full Service - $60</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="stylist-select">Choose your stylist:</label>
+                            <select class="form-control" id="stylist-select">
+                                <option value="John Doe">John Doe</option>
+                                <option value="Jane Smith">Jane Smith</option>
+                                <option value="Mary Johnson">Mary Johnson</option>
+                                <option value="Michael Brown">Michael Brown</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date-picker">Date:</label>
+                            <input type="date" class="form-control" id="date-picker" lang="en">
+                        </div>
+                        <div class="form-group">
+                            <label for="time-select">Time:</label>
+                            <select class="form-control" id="time-select">
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="stylist-select">Choose your stylist:</label>
-                        <select class="form-control" id="stylist-select">
-                            <option>John Doe</option>
-                            <option>Jane Smith</option>
-                            <option>Mary Johnson</option>
-                            <option>Michael Brown</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="date-picker">Date:</label>
-                        <input type="date" class="form-control" id="date-picker">
-                    </div>
-                    <div class="form-group">
-                        <label for="time-select">Time:</label>
-                        <select class="form-control" id="time-select">
-                            <option>10:00 AM</option>
-                            <option>11:00 AM</option>
-                            <option>12:00 PM</option>
-                            <option>1:00 PM</option>
-                            <option>2:00 PM</option>
-                        </select>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name-input">Your name:</label>
+                            <input type="text" class="form-control" id="name-input" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-input">Your phone number:</label>
+                            <input type="tel" class="form-control" id="phone-input" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-input">Your email address:</label>
+                            <input type="email" class="form-control" id="email-input" placeholder="Enter your email address">
+                        </div>
+                        <!-- 按钮添加 onclick 事件 -->
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Make an Appointment</button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="name-input">Your name:</label>
-                        <input type="text" class="form-control" id="name-input" placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone-input">Your phone number:</label>
-                        <input type="tel" class="form-control" id="phone-input" placeholder="Enter your phone number">
-                    </div>
-                    <div class="form-group">
-                        <label for="email-input">Your email address:</label>
-                        <input type="email" class="form-control" id="email-input" placeholder="Enter your email address">
-                    </div>
-                    <button type="submit" class="btn btn-success btn-lg btn-block" onclick="confirmAppointment()">Make an Appointment</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
     <!-- 底部 -->
@@ -122,15 +126,37 @@
         </div>
     </footer>
 
-
     <script>
-        function confirmAppointment() {
-            window.location.href = 'confirm.html';
-        }
-
         function showLocation() {
             alert("123 Hair St., Beauty City, Phone: (123) 456-7890");
+        }
+
+        function submitForm() {
+            // 获取用户输入的值
+            var service = document.getElementById("service-select").value;
+            var stylist = document.getElementById("stylist-select").value;
+            var date = document.getElementById("date-picker").value;
+            var time = document.getElementById("time-select").value;
+            var name = document.getElementById("name-input").value;
+            var phone = document.getElementById("phone-input").value;
+            var email = document.getElementById("email-input").value;
+
+            // 构造 URL 参数
+            var url = "confirm.html?service=" + encodeURIComponent(service) +
+                      "&stylist=" + encodeURIComponent(stylist) +
+                      "&date=" + encodeURIComponent(date) +
+                      "&time=" + encodeURIComponent(time) +
+                      "&name=" + encodeURIComponent(name) +
+                      "&phone=" + encodeURIComponent(phone) +
+                      "&email=" + encodeURIComponent(email);
+
+            // 跳转到 confirm.html 并附加 URL 参数
+            window.location.href = url;
+            return false; // 阻止表单的默认提交行为
         }
     </script>
 </body>
 </html>
+
+
+
