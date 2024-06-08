@@ -56,7 +56,7 @@ body {
     margin: auto;
     text-align: center;
     position: relative;
-    top: -20%;
+    top: -10%; /* 调整这里进行下移 */
 }
 
 .hero-text h1 {
@@ -86,7 +86,7 @@ body {
 
 /* 修改服务卡片样式 */
 .service-card {
-    background-color: #4B0082; /* 深紫色 */
+    background-color: #5d2386; /* 深紫色 */
     color: #FFD700; /* 金色文字 */
     margin-bottom: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -128,7 +128,7 @@ body {
 .service-card .btn {
     background-color: #FFD700; /* 使用金色按钮 */
     border: none;
-    color: #4B0082; /* 按钮上的文字为深紫色 */
+    color: #5d2386; /* 按钮上的文字为深紫色 */
 }
 
 .service-card .btn:hover {
@@ -136,10 +136,53 @@ body {
 }
 
 /* 修改服务标题样式 */
-.services-title {
+.services-title, .stylists-title {
     font-family: 'Brush Script MT', cursive; /* 更华美的字体 */
     color: #FFD700; /* 高级的金色 */
     font-size: 3rem;
+    margin-bottom: 40px; /* 增加底部间距 */
+}
+
+/* 新增的 Stylist 样式 */
+.stylist-card {
+    background-color: #5d2386; /* 深紫色背景 */
+    color: #FFD700; /* 金色文字 */
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 400px; /* 增加最小高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1; /* 确保所有块占用相同的空间 */
+}
+
+.stylist-card .card-img-top {
+    height: 100px;
+    object-fit: cover;
+    border-bottom: 2px solid #FFD700;
+}
+
+.stylist-card .card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stylist-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.stylist-card .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #FFD700;
 }
 
 footer {
@@ -204,5 +247,32 @@ img {
 
 .welcome-text {
     color: #FFD700 !important; /* 修改 Welcome 部分文字颜色为金色 */
+}
+
+/* 添加或修改按钮样式 */
+.btn {
+    background-color: #ff8c00; /* 使用橙色按钮背景 */
+    border: none; /* 移除边框 */
+    color: white; /* 按钮文字颜色为白色 */
+    font-size: 16px; /* 调整字体大小 */
+    padding: 10px 20px; /* 调整按钮内边距 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    cursor: pointer; /* 鼠标悬停时显示为手形 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.btn:hover {
+    background-color: #ff6600; /* 悬停时按钮颜色加深 */
+}
+
+/* 修改 "Book Now" 按钮的特定样式 */
+.btn-primary {
+    background-color: #ff8c00; /* 使用橙色 */
+    color: white; /* 文字颜色 */
+}
+
+.btn-primary:hover {
+    background-color: #ff6600; /* 悬停时颜色 */
 }
 

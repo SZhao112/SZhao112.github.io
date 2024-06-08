@@ -14,7 +14,7 @@
         <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="Logo" width="50" height="50">
         </a>
-        <a class="navbar-brand brand-name" href="index.html">Elegant Salon</a>
+        <a class="navbar-brand brand-name" href="index.html" style="font-size: 2rem; color: #FFD700; font-family: 'Brush Script MT', cursive;">Elegant Salon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,47 +39,54 @@
         </div>
     </nav>
 
-
     <!-- 主内容 -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Meet Our Stylists</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <img src="images/stylist1.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 1" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text">Expert in modern hairstyles and men's grooming.</p>
+    <div class="hero-image" style="background-image: url('images/salon-background.jpg');">
+        <div class="content-wrapper">
+            <h2 class="text-center mb-4 stylists-title">Meet Our Stylists</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="card text-center stylist-card">
+                        <img src="images/stylist1.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 1" style="width: 100px; height: 100px;">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">Expert in modern hairstyles and men's grooming.</p>
+                            <p class="card-text">John has over 10 years of experience in leading salons. He specializes in creating contemporary styles that suit each individual's personality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center stylist-card">
+                        <img src="images/stylist2.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 2" style="width: 100px; height: 100px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Specializes in women's haircuts and color treatments.</p>
+                            <p class="card-text">Jane has worked with top celebrities and has a keen eye for modern color trends. Her clients love her attention to detail and creative flair.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center stylist-card">
+                        <img src="images/stylist3.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 3" style="width: 100px; height: 100px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Mary Johnson</h5>
+                            <p class="card-text">Experienced in hair extensions and curly hair styling.</p>
+                            <p class="card-text">Mary is known for her expertise in hair extensions and working with curly hair textures to create beautiful, natural looks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center stylist-card">
+                        <img src="images/stylist4.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 4" style="width: 100px; height: 100px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Brown</h5>
+                            <p class="card-text">Master barber with over 15 years of experience.</p>
+                            <p class="card-text">Michael has been perfecting his craft for over 15 years. He is renowned for his precision cuts and expert grooming techniques.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <img src="images/stylist2.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 2" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Jane Smith</h5>
-                        <p class="card-text">Specializes in women's haircuts and color treatments.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <img src="images/stylist3.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 3" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Mary Johnson</h5>
-                        <p class="card-text">Experienced in hair extensions and curly hair styling.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <img src="images/stylist4.png" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="Stylist 4" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Michael Brown</h5>
-                        <p class="card-text">Master barber with over 15 years of experience.</p>
-                    </div>
-                </div>
-            </div>
+            <!-- 修改按钮样式 -->
+            <button class="btn btn-primary" onclick="window.location.href='booking.html'">Book Now</button>
         </div>
     </div>
 
@@ -108,7 +115,6 @@
         </div>
     </footer>
 
-
     <script>
         function showLocation() {
             alert("123 Hair St., Beauty City, Phone: (123) 456-7890");
@@ -116,3 +122,4 @@
     </script>
 </body>
 </html>
+
