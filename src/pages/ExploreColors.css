@@ -1,0 +1,16 @@
+.color-picker {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .color-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 100%;
+    margin: 10px;
+  }
+  
